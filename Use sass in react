@@ -1,0 +1,16 @@
+Install Sass: gem install sass
+
+Add a script to the package.json file:
+  "scripts": {
+    ......
+    "sass" : "sass --watch src/styles/scss:src/styles/css"
+  },
+
+2 terminal processes:
+yarn run sass
+yarn start
+
+refer:
+https://hackernoon.com/using-sass-with-create-react-app-without-ejecting-b5f4f827ed9e
+
+
