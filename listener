@@ -1,0 +1,10 @@
+React key listerner
+
+针对具体组件，当前组件必须处于被激活选中状态才生效
+
+<App tabIndex={1} onKeyDown={this.handleKeyDown}>
+第二种：
+
+componentDidMount() {
+   window.addEventListener('keydown', this.handleKeyDown)
+}
