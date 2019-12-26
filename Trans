@@ -1,0 +1,15 @@
+              import { Trans } from 'react-i18next';
+              
+              <span>
+                <Trans
+                  defaults={`dashboard.updates.pageDescription.availableUpdates`}
+                  values={{ kbNumber: upgradeKBNumber }}
+                  components={[
+                    <a href={upgradeKBLink} target="_blank" className={classes.kbLink}>
+                      &nbsp;
+                    </a>
+                  ]}
+                />
+              </span>
+              
+              "availableUpdates": "Use this page to select clusters and run pre-checks, download VxRail system bundle version(s), and/or apply upgrades. To apply upgrades, you must log into VxRail ACE on-premise and you must configure the VxRail Lockbox. To upgrade your clusters using VxRail ACE, click <0>{{kbNumber}}</0>."
