@@ -1,0 +1,5 @@
+make an html svg object also a clickable link
+https://stackoverflow.com/questions/11374059/make-an-html-svg-object-also-a-clickable-link/11374398#11374398
+Actually, the best way to solve this is... on the <object> tag, use:
+
+pointer-events: none;
