@@ -1,0 +1,20 @@
+https://stackoverflow.com/questions/38658413/how-to-change-exporting-filename-in-highcharts
+
+exporting: {
+    filename: 'custom-file-name'
+}
+
+http://jsfiddle.net/emrebolat/3L2n20a8/
+
+
+Export to svg
+https://www.highcharts.com/forum/viewtopic.php?t=40252
+
+// part of exporting module
+chart.exportChart(); // PNG
+chart.exportChart({type:"image/jpeg"}); // JPEG
+chart.exportChart({type:"application/pdf"}); // PDF
+chart.exportChart({type:"image/svg+xml"}); // SVG
+// part of export-data module
+chart.downloadCSV();
+chart.downloadXLS();
