@@ -1,14 +1,7 @@
 JSON.parse() 和 JSON.stringify()
 上面的 jQuery 源码是否让你眼花缭乱？有没有什么办法无脑实现深拷贝呢？JSON.parse() 和 JSON.stringify() 给了我们一个基本的解决办法。
 
-1
-2
-3
-4
-5
-6
-7
-8
+
 var target = {a: 1, b: 1, c: {ca: 11, cb: 12, cc: 13}};
 var targetCopy = JSON.parse(JSON.stringify(target));
 targetCopy.a = 2;
@@ -21,16 +14,6 @@ console.log(target === targetCopy);  // false
 但是用 JSON.parse() 和 JSON.stringify() 会有一个问题。
 JSON.parse() 和 JSON.stringify() 能正确处理的对象只有 Number、String、Array 等能够被 json 表示的数据结构，因此函数这种不能被 json 表示的类型将不能被正确处理。
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
 var target = {
     a: 1,
     b: 2,
